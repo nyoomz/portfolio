@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import profile from '@/assets/profile.png'
+import profile from '@/assets/profile.jpg'
 import { Mail, Phone, MapPin, Linkedin, Github } from 'lucide-vue-next'
 </script>
 

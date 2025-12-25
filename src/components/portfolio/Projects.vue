@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { Card, CardTitle, CardDescription } from '@/components/ui/card'
-import iMove from '@/assets/iMOVE.png'
-import iskonnect from '@/assets/iskonnect.png'
+import iMove from '@/assets/iMOVE.jpg'
+import iskonnect from '@/assets/iskonnect.jpg'
 import kwentoKwela from '@/assets/kwentoKwela.png'
 
 const projects = [
