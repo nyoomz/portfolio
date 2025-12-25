@@ -25,14 +25,14 @@ const experiences = [{
 </script>
 
 <template>
-    <section id="timeline" class="py-20 px-4">
-        <div class="w-full mx-auto max-w-6xl">
-            <div class="flex items-center gap-4 mb-12">
-                <h2 class="text-3xl md:text-4xl font-bold text-foreground">
-                    Timeline
+    <section id="timeline" class=" min-h-screen py-20 px-4">
+        <div class="container mx-auto max-w-6xl">
+            <div class="flex items-center gap-4 mb-16">
+                <h2 class="text-2xl md:text-3xl font-bold text-primary">
+                    My Experience and Academic Background
                 </h2>
             </div>
-            <div class="relative space-y-8">
+            <div class="relative space-y-12">
                 <div class="absolute left-1/2 transform -translate-x-1/2 w-0.5 h-full bg-primary/30 hidden md:block" />
                 <div v-for="experience in experiences" :key="experience.id" 
                     class="relative flex flex-col md:flex-row items-center w-full">

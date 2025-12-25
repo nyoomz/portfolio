@@ -4,24 +4,25 @@ import { Menu, X } from "lucide-vue-next"
 import resumeUrl from '/Resume_Cabayao-Leah.pdf'
 
 const navItems = [
-  { label: "About", href: "#about" },
-  { label: "Timeline", href: "#timeline" },
-  { label: "Projects", href: "#projects" },
+    { label: "About", href: "#about" },
+    { label: "Skills", href: "#skills" },
+    { label: "Timeline", href: "#timeline" },
+    { label: "Projects", href: "#projects" },
 ]
 
 const isScrolled = ref(false)
 const isMobileMenuOpen = ref(false)
 
 const handleScroll = () => {
-  isScrolled.value = window.scrollY > 50
+    isScrolled.value = window.scrollY > 50
 }
 
 onMounted(() => {
-  window.addEventListener("scroll", handleScroll)
+    window.addEventListener("scroll", handleScroll)
 })
 
 onUnmounted(() => {
-  window.removeEventListener("scroll", handleScroll)
+    window.removeEventListener("scroll", handleScroll)
 })
 </script>
 
@@ -33,7 +34,7 @@ onUnmounted(() => {
         : 'bg-transparent'"
     >
 
-        <div class="w-full mx-auto max-w-6xl">
+        <div class="w-full mx-auto max-w-6xl px-4">
         <div class="flex items-center justify-between h-16 md:h-20">
             
             <a href="#" class="text-xl font-bold text-foreground">

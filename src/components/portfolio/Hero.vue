@@ -5,7 +5,7 @@ import { Mail, Phone, MapPin, Linkedin, Github } from 'lucide-vue-next'
 
 <template>
     <section id="about" class="min-h-screen flex items-center justify-center py-20 px-2 relative overflow-hidden">    
-        <div class="container max-w-6xl relative z-10">
+        <div class="container max-w-6xl relative z-10 px-4">
             <div class="grid md:grid-cols-2 gap-12 items-center">
                 <div class="flex justify-center sn:justify-end order-1 md:order-1">
                     <div class="relative">
@@ -22,44 +22,52 @@ import { Mail, Phone, MapPin, Linkedin, Github } from 'lucide-vue-next'
                         </div>
                     </div>
                 </div>
-                <div class="text-center md:text-left order-2 md:order-2 space-y-6">
-                    <h1 class="text-2l md:text-4xl lg:text-6xl font-medium text-foreground">Hello! I'm <span class="font-bold text-primary">Leah Cabayao</span></h1>
-                    <p class="text-lg">A detail-oriented and driven student pursuing a degree in 
-                        <span class="font-bold">BS Information Technology</span> at the Central Luzon State University.
-                        Passionate about creating impactful digital solutions that address real challenges.
+                <div class="text-left order-2 md:order-2 space-y-4">
+                    <p class="text-sm md:text-base font-medium text-foreground">Hello! My name is</p>
+                    <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-primary leading-tight">Leah Cabayao</h1>
+                    <p class="text-sm md:text-base text-muted-foreground max-w-xl leading-relaxed">
+                        A driven and detail-oriented IT student interested in building 
+                        <span class="font-bold text-foreground">clear, user-centered digital solutions</span> 
+                        that solve real-world problems.
                     </p>
 
-                    <div class="space-y-2 mt-6">
-                        <div class="flex items-center gap-8">
-                            <div class="w-10 h-10 bg-blue-200 rounded-full flex items-center justify-center ">
+                    <div class="space-y-3 pt-2">
+                        <div class="flex items-center gap-4">
+                            <div class="w-10 h-10 bg-blue-200 rounded-full flex items-center justify-center shrink-0">
                                 <Mail class="text-blue-600 w-5 h-5" />
                             </div>
-                            <p>leahm.cabayao@gmail.com</p>
+                            <p class="text-sm md:text-base text-foreground">leahm.cabayao@gmail.com</p>
                         </div>
-                        <div class="flex items-center gap-6">
-                            <div class="w-10 h-10 bg-blue-200 rounded-full flex items-center justify-center">
+                        <div class="flex items-center gap-4">
+                            <div class="w-10 h-10 bg-blue-200 rounded-full flex items-center justify-center shrink-0">
                                 <Phone class="text-blue-600 w-5 h-5" />
                             </div>
-                            <p>+63 929 711 2114</p>
+                            <p class="text-sm md:text-base text-foreground">+63 929 711 2114</p>
                         </div>
-                        <div class="flex items-center gap-6">
-                            <div class="w-10 h-10 bg-blue-200 rounded-full flex items-center justify-center">
+                        <div class="flex items-center gap-4">
+                            <div class="w-10 h-10 bg-blue-200 rounded-full flex items-center justify-center shrink-0">
                                 <MapPin class="text-blue-600 w-5 h-5" />
                             </div>
-                            <p>Olongapo City, Zambales, 2200</p>
+                            <p class="text-sm md:text-base text-foreground">Olongapo City, Zambales, 2200</p>
                         </div>
                     </div>
 
-                    <div class="flex gap-4 justify-center md:justify-start animate-fade-in-up">
+                    <div class="flex gap-4 justify-start pt-2">
                     <a 
                         href="https://www.linkedin.com/in/leah-cabayao/" 
+                        target="_blank"
+                        rel="noopener noreferrer"
                         class="w-12 h-12 bg-primary text-primary-foreground rounded-full flex items-center justify-center hover:scale-110 transition-transform shadow-soft"
+                        aria-label="LinkedIn Profile"
                     >
                         <Linkedin class="w-5 h-5" />
                     </a>
                     <a 
                         href="https://github.com/nyoomz" 
+                        target="_blank"
+                        rel="noopener noreferrer"
                         class="w-12 h-12 bg-primary text-primary-foreground rounded-full flex items-center justify-center hover:scale-110 transition-transform shadow-soft"
+                        aria-label="GitHub Profile"
                     >
                         <Github class="w-5 h-5" />
                     </a>
